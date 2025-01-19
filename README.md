@@ -39,13 +39,6 @@ This repository is a curated selection of projects that highlight my creativity,
   - Agile methodologies
   - User-centered design (UI/UX)
   - Problem-solving and logical thinking  
-  - Writing clear documentation
-
----
-
-## 🔧 **Tech Stack**  
-- **Frontend Technologies**: HTML, CSS, JavaScript, Svelte  
-- **Development Tools**: Visual Studio Code, Git, Node.js  
-- **Additional Skills**: Accessibility standards, responsive design, clean code principles  
+  - Writing clear documentation 
 
 ---
