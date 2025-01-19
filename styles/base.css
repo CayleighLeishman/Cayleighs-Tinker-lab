@@ -1,0 +1,173 @@
+/* Accessible Tinkerbell-Inspired Colors */
+:root {
+    --accessible-green: #4caf50; /* Darker, accessible green */
+    --accessible-yellow: #ffcc00; /* High-contrast yellow */
+    --accessible-pink: #d81b60; /* Darker pink for readability */
+    --accessible-blue: #42a5f5; /* Accessible light blue */
+    --background-color: #f4f4f4; /* Neutral, high-contrast background */
+    --text-color: #212121; /* Dark text for better readability */
+  }
+  
+  /* Basic Styling */
+  body {
+    font-family: 'Arial', sans-serif;
+    overflow:hidden;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+  
+  h1, h2, h3 {
+    color: var(--accessible-yellow);
+  }
+  
+  a {
+    color: var(--accessible-pink);
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: var(--accessible-yellow);
+    text-decoration: underline;
+  }
+  
+  /* Buttons */
+  button {
+    background-color: var(--accessible-blue);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: var(--accessible-pink);
+    transform: scale(1.05);
+  }
+  
+
+  /* header */
+  header img{
+    width: 100px;
+    border-radius: 100px;
+  }
+  
+  /* Links */
+  footer a {
+    color: var(--accessible-blue);
+    text-decoration: underline;
+  }
+  
+  footer a:hover {
+    color: var(--accessible-pink);
+  }d
+ 
+  /* Headings and Section Titles */
+  h1, h2, h3 {
+    color: var(--accessible-green);
+  }
+  
+  /* Ensuring text visibility */
+  h1, h2, h3, p {
+    font-weight: bold;
+  }
+
+/* Cursor effect */
+/* Cursor effect */
+#sparkles-container {
+    position: absolute;
+    pointer-events: none;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.sparkle {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: gold;
+    border-radius: 50%;
+    opacity: 0;
+    animation: sparkle-animation 1s ease-out forwards;
+}
+
+/* toggle switch */
+#sparkleToggle {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+#toggle-label {
+    font-size: 1.2rem;
+    color: #333;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Style for the toggle switch */
+.switch-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.switch {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 50px;
+    height: 25px;
+    background-color: #ccc;
+    border-radius: 25px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.switch:checked {
+    background-color: #4caf50;  /* Green when checked */
+}
+
+.switch:checked + .slider {
+    transform: translateX(25px); /* Move the slider to the right */
+}
+
+.slider {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 21px;
+    height: 21px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+/* Label style */
+#toggle-label {
+    font-size: 16px;
+}
+
+
+
+@keyframes sparkle-animation {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(2);
+        opacity: 0.7;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
