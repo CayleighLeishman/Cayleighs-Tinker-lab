@@ -1,24 +1,31 @@
 /* Accessible Tinkerbell-Inspired Colors */
 :root {
-    --accessible-green: #4caf50; /* Darker, accessible green */
-    --accessible-yellow: #ffcc00; /* High-contrast yellow */
-    --accessible-pink: #d81b60; /* Darker pink for readability */
-    --accessible-blue: #42a5f5; /* Accessible light blue */
-    --background-color: #f4f4f4; /* Neutral, high-contrast background */
-    --text-color: #212121; /* Dark text for better readability */
+    --accessible-green: #4caf50;  /* Darker, accessible green              */
+    --accessible-yellow: #ffcc00; /* High-contrast yellow                 */
+    --accessible-pink: #e87aa3;   /* Darker pink for readability         */
+    --accessible-blue: #42a5f5;   /* Accessible light blue              */
+    --background-color: #f6ebeb;  /* Neutral, high-contrast background */
+    --text-color: #212121;        /* Dark text for better readability */
+    --white: #ffff;               /* white                           */
   }
   
   /* Basic Styling */
   body {
     font-family: 'Arial', sans-serif;
-    overflow:hidden;
-    background-color: var(--background-color);
+    overflow:auto;
+    background-color: var(--accessible-pink);
     color: var(--text-color);
-    margin: 0;
+    margin: 5em;
     padding: 0;
     line-height: 1.6;
+    
   }
   
+  main{
+    background-color: var(--background-color);
+    border-radius: .7em;  
+  }
+
   h1, h2, h3 {
     color: var(--accessible-yellow);
   }
@@ -40,30 +47,30 @@
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
-    cursor: pointer;
+    /* cursor: pointer; */
   }
   
   button:hover {
     background-color: var(--accessible-pink);
-    transform: scale(1.05);
+    /* transform: scale(1.05); */
   }
   
-
   /* header */
   header img{
     width: 100px;
     border-radius: 100px;
+    grid-template-columns: 2fr 2fr;
   }
   
   /* Links */
   footer a {
-    color: var(--accessible-blue);
+    color: var(--white);
     text-decoration: underline;
   }
   
   footer a:hover {
-    color: var(--accessible-pink);
-  }d
+    color: var(--accessible-blue);
+  }
  
   /* Headings and Section Titles */
   h1, h2, h3 {
@@ -74,6 +81,19 @@
   h1, h2, h3, p {
     font-weight: bold;
   }
+
+/*  classes in multiple pages */
+
+.home-main{
+  padding: 4em;
+}
+
+/* classes in Private Policy */
+
+.private-policy-header{
+  background-color: var(--background-color);
+  border-radius: .5em;
+}
 
 /* Cursor effect */
 /* Cursor effect */
@@ -90,10 +110,10 @@
 
 .sparkle {
     position: absolute;
-    width: 8px;
-    height: 8px;
+    width: 2px;
+    height: 2px;
     background-color: gold;
-    border-radius: 50%;
+    border-radius: 100%;
     opacity: 0;
     animation: sparkle-animation 1s ease-out forwards;
 }
@@ -154,8 +174,6 @@
 #toggle-label {
     font-size: 16px;
 }
-
-
 
 @keyframes sparkle-animation {
     0% {
