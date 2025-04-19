@@ -1,1 +1,33 @@
 /* media (when screen size is small/tiny phone or watch */
+/* add response for text to always stay within the box width.  */
+
+@media screen and (max-width: 400px) {
+    /* make it so that the colors go to "base" so that we can just use var(--white) or whateve colros we need withot copying and pasting */
+    body{
+        font-size: 10px;
+        padding:5px;
+        text-align: center;
+        background-color: #150b0b;
+    }
+    div{
+        display: flex;
+        flex-direction: column;
+    }
+
+      /* Links */
+    footer a {
+    color: black;
+  }
+
+  /* Makes it so you can't see the "Sparkle effect" button  if the screen size is small */
+   /* Hide the sparkle toggle and any related visual */
+   .switch-container,
+   .slider,
+   #sparkleToggle {
+     display: none ;
+   }
+ 
+   .special-button {
+     display: none ;
+   }
+ }

@@ -3,69 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Personal project showcasing ideas and creations">
-    <meta name="author" content="Cayleigh Marie">
-    <meta name="keywords" content="Cayleigh Marie, personal projects, web development, coding, tutorials">
-
     <title>Personal Project</title>
 
-    <!-- CSS Styles -->
+    <!-- Link to the CSS stylesheets -->
     <link rel="stylesheet" href="styles/base.css"> 
+    <link rel="stylesheet" href="styles/small.css">
 
-    <!-- JavaScript Styles -->
+    <!-- Link to the JavaScript file that makes the sparkle effect work -->
     <script src="scripts/sparkleCursor.js" defer></script>
 
-    <!-- Favicon -->
+    <!-- Favicon (the little icon you see in tabs) -->
     <link rel="icon" href="images/favicon.ico">
-
 </head>
 
 <body>
+
     <header>
+        <!-- This is your profile picture, an SVG image -->
         <img src="images/profile.svg" alt="Cayleigh Leishman Profile Picture">
         <h1>Welcome to My Project</h1>
-        <p>Here, I showcase my ideas and creations.</p>
     </header>
 
-<main class="home-main">
+        <!-- Navigation links for 'About' and 'Contact' sections -->
+        <nav>
+            <a href="about-cayleigh.html" aria-label="About Navigation">About Me</a>
+            <a href="#" aria-label="Contact section">Contact</a>
+        </nav>
+    
 
-    <!-- Toggle Button to Turn Sparkles On/Off -->
-    <!-- this worked but 
-     <label for="sparkleToggle" id="toggle-label">✨ Enable Sparkles</label>
-    <input type="checkbox" id="sparkleToggle" checked> -->
-   
-     <!-- Toggle Switch to Turn Sparkles On/Off -->
-     <div class="switch-container">
-        <label for="sparkleToggle" id="toggle-label">✨ Enable Sparkles</label>
-        <input type="checkbox" id="sparkleToggle" class="switch" checked>
-        <span class="slider"></span>
-    </div>
+    <!-- Main section of the page -->
+    <main class="home-main">
+        <!-- Button to toggle sparkle effect (on/off) -->
+        <div class="switch-container">
+            <label for="sparkleToggle" id="toggle-label">✨ Enable Sparkles</label>
+            <input type="checkbox" id="sparkleToggle" class="switch" checked>
+            <span class="slider"></span>
+        </div>
 
-    <nav>
-        <a href="#" aria-label="About section">About</a>
-        <a href="#" aria-label="Projects section">Projects</a>
-        <a href="#" aria-label="Contact section">Contact</a>
-    </nav>
+     
+        <!-- This is where the sparkles will show up -->
+        <div id="sparkles-container"></div>
 
-    <div id="sparkles-container"></div>
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hello! My name is Cayleigh Marie, and I love creating cool projects. This is a space to share my journey and ideas.</p>
-    </section>
-    <section id="projects">
-        <h2>My Projects</h2>
-        <ul>
-            <li><strong>Project 1:</strong> <a href="https://github.com/CayleighLeishman/ArcticMathAcademy">A math flashcard app based on penguins.</a></li>
-            <li><strong>Project 3:</strong> <a href="https://cayleighleishman.github.io/CodeToCraft-/chamber/index.html">Pocatello Chamber Practice</a></li>
-        </ul>
-    </section>
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Have questions or want to collaborate? Reach out to me at <a href="mailto:cayleigh.leishman@gmail.com">cayleigh.leishman@gmail.com</a>.</p>
-    </section>
-</main>
+        <!-- 'About' section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello! My name is Cayleigh Marie, and I love creating web projects. This is a space to share my journey and ideas.</p>
+        </section>
+
+      <!-- 'Projects' section -->
+        <section id="project">
+            <h2>My Projects</h2> 
+        
+            <!-- Using <figure> for accessibility, helping screen readers understand this is an image with related content -->
+            
+            <!-- Pocatello Chamber Project - 2022 -->
+             <h3>2022</h3>
+            <figure class="project-screenshot">
+        
+              <img src="images/pocatello-Chamber.png " alt="Screenshot of home page of Pocatello Chamber website" class="project-image">
+              <figcaption>Pocatello Chamber</figcaption>
+              <p>
+                This project helped me strengthen my understanding of JavaScript—especially the dark mode/light mode toggle feature. 
+                It was one of the most exciting things I learned that semester and really got me more into JavaScript.
+              </p>
+            </figure>
+        
+            <h3>2023</h3>
+            <!-- Enchanted Backpacks Website - Spring 2023 -->
+            <figure class="project-screenshot">
+              <img src="images/portfolio.png" alt="Screenshot of home page of Enchanted Backpacks website" class="project-image">
+              <figcaption>Enchanted Backpacks</figcaption>
+              <p>
+                This project made me realize I still had a lot to learn. While I appreciated the chance to create a more colorful page, 
+                I definitely humbled myself as I worked through properly implementing CSS and JavaScript.
+              </p>
+            </figure>
+        
+            <!-- Math Flashcard App - 2024 -->
+             <h3>2024</h3>
+            <figure class="project-screenshot">
+              <img src="images/penguinMathApp.png" alt="Screenshot of home page of Math Flashcard App" class="project-image">
+              <figcaption>Math Flashcard App</figcaption>
+              <p>
+                This was a group project I worked on with classmates. We created a math flashcard app to help students practice math skills. 
+                It was my first time using Svelte in a big project, and I learned a lot about components. I also learned the importance of 
+                double-checking save files and not relying entirely on auto-save—lesson learned the hard way!
+              </p>
+            </figure>
+        
+            <!-- CheckThisOut Library Site - API Practice -->
+            <h3>2025</h3>
+            <figure class="project-screenshot">
+              <img src="images/checkThisOut.png" alt="Screenshot of home page of CheckThisOut Library website" class="project-image">
+              <figcaption>Check This Out Library</figcaption>
+              <p>
+                This was my first time working with an API, and I was so excited to finally understand how they work. 
+                I successfully connected the API and gained a clearer understanding of how MVC works and what APIs actually do.
+              </p>
+            </figure>
+        
+          </section>
+  
+
+        <!-- 'Contact' section -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Have any questions or want to provide feedback? Reach out to me at <a href="mailto:cayleigh.leishman@gmail.com">cayleigh.leishman@gmail.com</a>.</p>
+        </section>
+    </main>
+
+    <!-- Footer section -->
     <footer>
-        <p>&copy; 2025 CayleighMarie. All rights reserved.<a href="private_policy.html">Privacy Policy</a></p>
+        <p>&copy; 2025 CayleighMarie. All rights reserved.<a href="private-policy.html">Privacy Policy</a></p>
     </footer>
 </body>
 </html>
