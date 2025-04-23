@@ -88,10 +88,13 @@ nav a:hover::after {
     color: var(--accessible-pink);
     text-decoration: none;
     
+    
   }
 
   a:hover {
-    color: var(--accessible-green); 
+    background-color: var(--accessible-green); 
+    /* the color "White" below is in because some text expecially hyperlink texts are pink and need to change color */
+    color: var(--white);
     text-decoration: underline; 
   }
 
@@ -132,6 +135,7 @@ nav a:hover::after {
  footer a {
    color: var(--white);
    text-decoration: underline;
+   
  }
  
  footer a:header {
