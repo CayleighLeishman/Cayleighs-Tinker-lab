@@ -1,5 +1,6 @@
-/* This is for .css that applies to ALL screens.  */
-
+/*********************************************
+ *        CSS for All Pages   *
+ *********************************************/
 /* Accessible Tinkerbell-Inspired Colors */
 :root {
     --accessible-green: #4caf50;  /* Darker, accessible green              */
@@ -81,7 +82,7 @@ nav a:hover::after {
 
 
   h1, h2, h3 {
-    color: var(---gold);
+    color: var(--sparkle-gold);
   }
   
   a {
@@ -116,6 +117,11 @@ nav a:hover::after {
   
  /* header */
  header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+  justify-content: center;  
    border-radius: .7em;  
    padding: 1em;
    background-color: var(--background-color);
@@ -124,7 +130,8 @@ nav a:hover::after {
    gap: 8em;                 
    text-align: left;     
    margin-bottom: 2em;       
- }
+ 
+  }
  header img{
    width: 100px;
    border-radius: 100px;
@@ -152,6 +159,12 @@ nav a:hover::after {
    font-weight: bold;
  }
 
+ /* Sparkle Cursor Effect */
+
+
+ /*********************************************
+ *             Index  Webpage                 *
+ *********************************************/
 /* Cursor effect */
 #sparkles-container {
   position: fixed;
@@ -197,7 +210,6 @@ nav a:hover::after {
     opacity: 0;
   }
 }
-
 
 /* toggle switch */
 #sparkleToggle {
@@ -256,7 +268,7 @@ nav a:hover::after {
     font-size: 16px;
 }
 
-/* hover effect images */
+/*=Hover effects For project Images in index  */
 /* .project-screenshot{
   transition: transform 0.2s ease, box-shadow 0.3s ease;
 }*/
@@ -285,3 +297,18 @@ nav a:hover::after {
   border-radius: .5em;
 }
 
+/*********************************************
+ *         about-cayleigh.html               *
+ *********************************************/
+ .timeline {
+  list-style-type: none;
+  padding: 0;
+}
+.timeline h3 {
+  margin-top: 1.5em;
+  font-size: 1.5em;
+  color: var(--accessible-blue);
+}
+.timeline ul {
+  margin-left: 1em;
+}
