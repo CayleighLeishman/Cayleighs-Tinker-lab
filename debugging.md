@@ -1,3 +1,9 @@
+
+
+May 20th
+
+I'm doing a lot of debugging today and feel like i got nothing done, but honestly i know i did. I', just exausted and still a little bit sick. 
+
 May 13th
 
 heeeey
@@ -45,6 +51,8 @@ I found this from  [keenan.co](https://gkeenan.co/)
 ```
 
 keenan is a blog post site, and its actually intruiging to me. It actually reminds me of Avalon because of keenan's mindset against AI and 
+
+
 
 I always forget how to make links in .md. I ahve to remind myself what's in the box is whats visibly seen in the windows box [ ]   (it's shapped like a computer or laptop) and then the () is where we put the hidden information. 
 
