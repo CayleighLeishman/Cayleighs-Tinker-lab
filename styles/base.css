@@ -4,13 +4,13 @@
 /* Accessible Tinkerbell-Inspired Colors */
 :root {
     --accessible-green: #4caf50;  /* Darker, accessible green              */
-    --sparkle-gold: #ffcc00; /* High-contrast yellow                 */
+    --sparkle-gold: #ffcc00;      /* High-contrast yellow                 */
     --accessible-pink: #e87aa3;   /* Darker pink for readability         */
     --accessible-blue: #3c44de;   /* Accessible light blue              */
     --background-color: #f6ebeb;  /* Neutral, high-contrast background */
     --text-color: #212121;        /* Dark text for better readability */
-    --white: #ffff;               /* white                           */
-    --light-green: #ebf6ef;       /* Light Green  */
+    --white: #ffffff;             /* white                              */
+    --light-green: #ebf6ef;       /* Light Green                          */
     
 
     --box-shadow-green: 122, 50%, 50%;     /* Box shadow color */
@@ -28,14 +28,49 @@
     
   }
 
+
   main { 
+
     background-color: var(--background-color);
-    border-radius: .7em;  
-  max-width: 100%;
-  padding: 1em 1.5em;
-  box-sizing: border-box;
+    border-radius: .7em; 
+
+    /* max-width: 100%; */
+    margin: 5em auto;
+    
+
+    padding: 1em 1.5em;
+    box-sizing: border-box;
 }
 
+ul li{
+  list-style: none;
+  padding: 0.5em;
+  margin: 0.5em;
+  background-color: var(--white);
+  border-radius: .5em;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+ul li:hover{
+  transform: scale(1.02); 
+  box-shadow: hsla(var(--box-shadow-green), 0.3);/* Add a shadow effect */
+  animation-name: vertical-spin;
+    animation-duration: 1s; /* lightning fast */;
+    animation-iteration-count: 3;
+    animation-timing-function: linear;
+    transform-style: preserve-3d;
+}
+
+@keyframes vertical-spin{
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 
   /* Navigation */
   nav {
@@ -113,7 +148,12 @@
     border-radius: 5px;
     /* cursor: pointer; */
   }
-  
+
+  button:focus {
+  outline: 2px solid var(--accessible-blue);
+  outline-offset: 2px;
+}
+
   button:hover {
     background-color: var(--accessible-pink);
     /* transform: scale(1.05); */
@@ -151,13 +191,8 @@
    font-weight: bold;
  }
  
- nav, footer {
-  width: 100vw;         /* Take full viewport width */
-  position: relative;   /* Stay in normal flow */
-  left: -5em;           /* Offset the 5em body margin */
-}
- footer{
 
+ footer{
    color: var(--white);
     text-align: center;
    width:100%;
@@ -170,10 +205,10 @@
    color: var(--white);
    text-decoration: underline;
  }
- 
 
- footer a:header {
-   color: var(--accessible-blue);
+ footer hr{
+    border: 1px solid var(--white);
+    margin: 2rem 0;
  }
 
  /*********************************************
@@ -292,7 +327,7 @@
 
 .project-image:hover{
   transform: scale(1.08); 
-  box-shadow: 0 8px 20px hsla(var(--box-shadow-green), 0.3);/* Add a shadow effect */
+  box-shadow: hsla(var(--box-shadow-green), 0.3);/* Add a shadow effect */
 }
 
 /* Private-Policy.html */
@@ -304,9 +339,47 @@
 /*********************************************
  *         about-cayleigh.html               *
  *********************************************/
+ 
+
+ 
  .timeline {
+
+  display:flex;
+  flex-direction: column;
+
   list-style-type: none;
-  padding: 0;
+  
+  gap:1.8rem;
+}
+
+.timeline-item {
+  display: grid;
+  grid-template-columns: auto  1fr;
+  grid-template-rows: auto auto;
+  gap: 1.5em;
+}
+.year{
+grid-column: 1/-1;
+  font-size: 1.5em;
+  color: var(--accessible-blue);
+  font-weight: bold;
+  padding-right: 1em;
+  text-align: right;
+}
+.description{
+  font-size: 1.2em;
+  color: var(--accessible-blue);
+  flex-grow:1;
+  padding-left: 1em;
+  line-height: 1.4;
+  margin-bottom: .5em;
+}
+.line{
+  height:9rem;
+  width:.3rem;
+  background-color: var(--accessible-green);
+  flex-grow: 1;
+
 }
 .timeline h3 {
   margin-top: 1.5em;
@@ -316,6 +389,14 @@
 .timeline ul {
   margin-left: 1em;
 }
+
+.timeline section {
+  border-left: 4px solid var(--accessible-green);
+  padding-left: 1em;
+  margin-bottom: 1.5em;
+}
+
+
 /* Project Grid Layout */
 .project-grid {
   display: grid;
@@ -359,3 +440,44 @@
 }
 
 
+
+/*********************************************
+ *         site-plan.html               *
+ *********************************************/
+ 
+/* Card-style sections inside main */
+.card {
+    background-color: white; /* keeps card white for consistent readability */
+    border-radius: 12px;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Table of colors */
+table.colors {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table.colors th,
+table.colors td {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+}
+
+/* Hover effect for color scheme table cells */
+table.colors td:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.accessible-green { background-color: #4caf50; color: white; }
+.sparkle-gold { background-color: #ffcc00; }
+.accessible-pink { background-color: #e87aa3; color: white; }
+.accessible-blue { background-color: #3c44de; color: white; }
+.background-color { background-color: #f6ebeb; }
+.text-color { background-color: #212121; color: white; }
+.white { background-color: #ffffff; }
+.light-green { background-color: #ebf6ef; }
