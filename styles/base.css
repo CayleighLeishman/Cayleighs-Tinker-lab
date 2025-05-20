@@ -6,11 +6,13 @@
     --accessible-green: #4caf50;  /* Darker, accessible green              */
     --sparkle-gold: #ffcc00; /* High-contrast yellow                 */
     --accessible-pink: #e87aa3;   /* Darker pink for readability         */
-    --accessible-blue: #42a5f5;   /* Accessible light blue              */
+    --accessible-blue: #3c44de;   /* Accessible light blue              */
     --background-color: #f6ebeb;  /* Neutral, high-contrast background */
     --text-color: #212121;        /* Dark text for better readability */
     --white: #ffff;               /* white                           */
     --light-green: #ebf6ef;       /* Light Green  */
+    
+
     --box-shadow-green: 122, 50%, 50%;     /* Box shadow color */
   }
   
@@ -25,60 +27,63 @@
     line-height: 1.6;
     
   }
-  
-  main{
+
+  main { 
     background-color: var(--background-color);
     border-radius: .7em;  
-    padding: 4em; 
-   }
-
-/* Navigation */
-nav {
-  position: sticky;      
-  top: 0;              
-  width: 100%;          
-  background-color: var(--background-color); 
-  z-index: 1000;        
-  display: flex;       
-  justify-content: center; /* Or space-between / flex-start if you want alignment */
-  gap: 2em;             
-  padding: 1em 2em;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Optional: adds a shadow */
-  border-style:double;
-  border-color: var(--accessible-green);
+  max-width: 100%;
+  padding: 1em 1.5em;
+  box-sizing: border-box;
 }
 
-nav a {
-  color: var(--accessible-pink);
-  position: relative;
-  text-decoration: none;
-  font-size: 1.2rem;
-  padding: 5px 0;
-  overflow: hidden;
-  z-index: 1;
-  transition: color 0.3s ease-in-out; /* Smooth text color transition */
-}
 
-nav a::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background-color: var(--accessible-green);
-  z-index: -1;
-  transition: height 0.3s ease-in-out, background-color 0.3s ease-in-out;
-}
+  /* Navigation */
+  nav {
+    position: sticky;      
+    top: 0;              
+    width: 100%;          
+    background-color: var(--background-color); 
+    z-index: 1000;        
+    display: flex;       
+    justify-content: center; /* Or space-between / flex-start if you want alignment */
+    gap: 2em;             
+    padding: 1em 2em;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Optional: adds a shadow */
+    border-style:double;
+    border-color: var(--accessible-green);
+  }
 
-nav a:hover {
-  color: white; /* Text color changes here */
-}
+  nav a {
+    color: var(--accessible-pink);
+    position: relative;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 5px 0;
+    overflow: hidden;
+    z-index: 1;
+    transition: color 0.3s ease-in-out; /* Smooth text color transition */
+  }
 
-nav a:hover::after {
-  height: 100%;
-  background-color: var(--accessible-green); /* You can change this if you want the background to be different */
-}
+  nav a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--accessible-green);
+    z-index: -1;
+    transition: height 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  }
+
+  nav a:hover {
+    color: white; /* Text color changes here */
+  }
+
+  nav a:hover::after {
+    height: 100%;
+    background-color: var(--accessible-green); /* You can change this if you want the background to be different */
+  }
 
 
   h1, h2, h3 {
@@ -88,7 +93,6 @@ nav a:hover::after {
   a {
     color: var(--accessible-pink);
     text-decoration: none;
-    
     
   }
 
@@ -120,13 +124,12 @@ nav a:hover::after {
   display: flex;
   flex-direction: column;
   align-items: center;
- 
-  justify-content: center;  
+  justify-content: center;
+    
    border-radius: .7em;  
    padding: 1em;
    background-color: var(--background-color);
-   display: flex;            
-   align-items: center;       
+     
    gap: 8em;                 
    text-align: left;     
    margin-bottom: 2em;       
@@ -138,32 +141,43 @@ nav a:hover::after {
    grid-template-columns: 2fr 2fr;
  }
  
- /* Links */
- footer a {
-   color: var(--white);
-   text-decoration: underline;
-   
- }
- 
- footer a:header {
-   color: var(--accessible-blue);
+ img{
+  max-width:35rem;
  }
 
  /* Headings and Section Titles */
  h1, h2, h3 {
    color: var(--accessible-green);
- }
- 
- /* Ensuring text visibility */
- h1, h2, h3 {
    font-weight: bold;
  }
+ 
+ nav, footer {
+  width: 100vw;         /* Take full viewport width */
+  position: relative;   /* Stay in normal flow */
+  left: -5em;           /* Offset the 5em body margin */
+}
+ footer{
 
- /* Sparkle Cursor Effect */
+   color: var(--white);
+    text-align: center;
+   width:100%;
 
+   padding: 3rem;
+   width:100%;
+ }
+
+ footer a {
+   color: var(--white);
+   text-decoration: underline;
+ }
+ 
+
+ footer a:header {
+   color: var(--accessible-blue);
+ }
 
  /*********************************************
- *             Index  Webpage                 *
+ *           Sparkle Cursor Effect            *
  *********************************************/
 /* Cursor effect */
 #sparkles-container {
@@ -237,7 +251,7 @@ nav a:hover::after {
     -webkit-appearance: none;
     width: 50px;
     height: 25px;
-    background-color: #ccc;
+    background-color: #ccc;                          
     border-radius: 25px;
     position: relative;
     cursor: pointer;
@@ -268,18 +282,8 @@ nav a:hover::after {
     font-size: 16px;
 }
 
-/*=Hover effects For project Images in index  */
-/* .project-screenshot{
-  transition: transform 0.2s ease, box-shadow 0.3s ease;
-}*/
-
-/*.project-screenshot:hover {
-  transform: scale(1.05); 
-  box-shadow: 0 4px 15px rgba(var(--accessible-blue)0, 0, 0, 0.2); /* Add a shadow effect 
-} */
 
 /*  this applies to the images in index.html section titled "project"*/
-
 .project-image{
   transition: transform 0.2s ease, box-shadow 0.3s ease;
   width: 100%;
@@ -312,3 +316,46 @@ nav a:hover::after {
 .timeline ul {
   margin-left: 1em;
 }
+/* Project Grid Layout */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Individual project styling */
+.project-screenshot {
+  background-color: #fdfdfd;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.project-screenshot:hover {
+  transform: scale(1.02);
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.project-screenshot figcaption {
+  font-weight: bold;
+  margin-top: 0.5rem;
+  margin-bottom: 0.25rem;
+  font-size: 1.1rem;
+}
+
+.project-screenshot p {
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+

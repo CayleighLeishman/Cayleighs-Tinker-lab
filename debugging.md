@@ -1,3 +1,62 @@
+May 13th
+
+heeeey
+
+its been a while,
+
+So I've found a way to have a hover effect for a logo, you litterally just type it in code you dont have an image for it, so I'm going to see if I can get that to work
+
+I found this from  [keenan.co](https://gkeenan.co/)
+
+```html
+
+    <header>
+    <h1 id="keename"><a href="/">Keenan</a></h1>
+    </header>
+```
+```css
+ body > header {
+    text-align: left;
+    text-decoration: none;
+    padding: 2rem 0.5rem 0rem 0.5rem;
+    margin: 0 -12rem;
+    box-sizing: border-box;
+  }
+  
+  body > header h1 {
+    max-width: 100%;
+    margin: 5rem auto;
+    text-decoration: none;
+    color: var(--text-light);
+  }
+
+  #keename a{
+    color: var(--text-light);
+    text-decoration: none;
+    transition: color .25s;
+    position: static;
+    max-width: fit-content;
+  }
+
+  #keename a:hover {
+    color: var(--accent);
+    transition: color .25s;
+  }
+```
+
+keenan is a blog post site, and its actually intruiging to me. It actually reminds me of Avalon because of keenan's mindset against AI and 
+
+I always forget how to make links in .md. I ahve to remind myself what's in the box is whats visibly seen in the windows box [ ]   (it's shapped like a computer or laptop) and then the () is where we put the hidden information. 
+
+every time I always forget.
+
+Anyways I started to work on other projects, and neglected this one. I actually shared this site to a class to show people where my current skillsets are, and I actually got a lot of suprisingly postivive feedback. One said the website made her curious about what more there was to see and she loved the hover effect, and another lady also loved the hover effect (sparkles). I was debating removing it but now I'm going to keep it. I just need to figure out how to get the danged white part of th ebutton to get back where it's supposed to be. 
+
+I want to try to make a goal to try to use chatgpt as a debugger, and if i do for some reason need to get code from it, I'm going to type it out more myself. Especially for my svelte project. That way I can ensure I remmeber what each section is neamed. Although I've named all if not most of my sections, i dnt remember what i namedeach of them so I want to get more practice. 
+
+The good news, is that it's helpig me understand how to read code alot better! it's activly forcing me to learn how to read code. 
+
+
 April 18th
 
 This is showing me how much I have to learn of Javascirpt still. I'm grateful for chatgbt for showing me potential code, but also showing me what I still dont understand yet. So I'm going to try to learn alittl emore about javascript. I undesrtand the naming convention, but since I dont fully understand what I'm getting wrong, I'll need to have a refreshor on that.
