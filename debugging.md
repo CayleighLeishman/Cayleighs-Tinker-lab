@@ -1,4 +1,14 @@
-may 22nd
+
+May 22nd
+
+I'm exasted and though i should do thislater at night and do my homework now I was mor emotivated to do this, and I'm strugling to focus on my homework.
+I think I need to take a break and go to bed. I feel like I got a lot done, but I also feel like I didn't get much done you know?
+
+I kept getting disstracted, I would be like "I need to update the images" then I would see htat a div was off center so I would fix the off center then realize that the main was off and not equal on all sidzes so I fixed that (accomplished that by the way) and then this and then that, and sometooimes I wouldnt fix the past thing before moving to the next in fear that i would forget it needs to be done. 
+
+I'm going to keep trrack of what I've found that I need to work on so I can worry about one at a time, and work on prioritiing. I'm great at priroritizing, but I'm not good at keeping focus if i see new things that need to be done. So that will be a work in progress for me.
+
+may 21st
 
 okay i figired ut why i felt like i had nothing done.
 
