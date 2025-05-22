@@ -45,6 +45,49 @@
     box-sizing: border-box;
 }
 
+header{
+  background-color: var(--background-color);
+  border-radius: .5em;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+  margin-bottom: 2em;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+  header img{
+   width: 100px;
+   border-radius: 100px;
+ }
+ 
+ .header-left{
+   display:flex;
+   align-items: center;
+
+   width:100%;
+  
+   padding:2rem;
+ }
+
+ .logo{
+
+  height: auto;
+  border-radius: 50%;
+
+  padding: 2em;
+  background-color: hsla(var(--box-shadow-green), 0.3);
+ }
+
+ .profile-pic{
+    width: 60px;
+  height: 60px;
+  border-radius: 50%;
+ 
+ }
+
+
+
 ul li{
   list-style: none;
   padding: 0.5em;
@@ -66,7 +109,7 @@ ul li:hover{
     transform-style: preserve-3d;
 }
 
-@keyframes vertical-spin{
+@keyframes vertical-spin {
   from {
     transform: rotate(0deg);
   }
@@ -77,29 +120,38 @@ ul li:hover{
 
   /* Navigation */
   nav {
-    position: sticky;      
-    top: 0;              
-    width: 100%;          
+              
+    width: 90%;          
     background-color: var(--background-color); 
-    z-index: 1000;        
+          
+    position: sticky;
     display: flex;       
     justify-content: center; /* Or space-between / flex-start if you want alignment */
     gap: 2em;             
     padding: 1em 2em;
+
     box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Optional: adds a shadow */
     border-style:double;
     border-color: var(--accessible-green);
+
+    z-index: 1000;
+
   }
 
   nav a {
     color: var(--accessible-pink);
+
     position: relative;
+
     text-decoration: none;
     font-size: 1.2rem;
+
     padding: 5px 0;
     overflow: hidden;
-    z-index: 1;
+
     transition: color 0.3s ease-in-out; /* Smooth text color transition */
+    
+    z-index: 1;
   }
 
   nav a::after {
@@ -161,32 +213,6 @@ ul li:hover{
     background-color: var(--accessible-pink);
     /* transform: scale(1.05); */
   }
-  
- /* header */
- header{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-    
-   border-radius: .7em;  
-   padding: 1em;
-   background-color: var(--background-color);
-     
-   gap: 8em;                 
-   text-align: left;     
-   margin-bottom: 2em;       
- 
-  }
- header img{
-   width: 100px;
-   border-radius: 100px;
-   grid-template-columns: 2fr 2fr;
- }
- 
- img{
-  max-width:35rem;
- }
 
  /* Headings and Section Titles */
  h1, h2, h3 {
@@ -339,12 +365,6 @@ ul li:hover{
   border-radius: .5em;
 }
 
-/*********************************************
- *         about-cayleigh.html               *
- *********************************************/
- 
-
- 
  .timeline {
 
   display:flex;

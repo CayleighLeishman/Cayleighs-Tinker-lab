@@ -1,68 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Project</title>
 
-    <!-- Link to the CSS stylesheets -->
-    <link rel="stylesheet" href="styles/base.css"> 
-    <link rel="stylesheet" href="styles/small.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Personal project showcasing ideas and creations" />
+    <meta name="author" content="Cayleigh Marie" />
+    <meta name="keywords" content="Cayleigh Marie, personal projects, web development, coding, tutorials" />
 
-    <!-- Link to the JavaScript file that makes the sparkle effect work -->
+    <title>About Cayleigh Leishman</title>
+
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/small.css" />
+
+    <!-- JavaScript -->
     <script src="scripts/sparkleCursor.js" defer></script>
 
-    <!-- Favicon (the little icon you see in tabs) -->
-    <link rel="icon" href="images/favicon.ico">
-</head>
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" />
 
+
+</head>
 <body>
     <header>
-        <!-- This is your profile picture, an SVG image -->
-        <img src="images/profile.svg" alt="Cayleigh Leishman Profile Picture">
-        <h1>Welcome to My Project</h1>  
-        <!-- Navigation links for 'About' and 'Contact' sections -->
-        <nav>
-            <a href="about-cayleigh.html" aria-label="About Navigation">About Me</a>
-            <a href="#" aria-label="Contact section">Contact</a>
-        </nav>
+      
+        <img src="images/profile.svg" alt="Cayleigh Leishman Profile Picture" />
+        <h1>Hi, I'm Cayleigh Leishman</h1>
     </header>
-
- 
-    <!-- Main section of the page -->
-    <main class="home-main">
-        <!-- Button to toggle sparkle effect (on/off) -->
+        
+          <nav>
+            <a href="index.html" aria-label="About Navigation">About Me</a>
+            <a href="fun/scavengerhunt.html"aria-label="Navigate to Scavenger Hunt">Scavenger Hunt</a>
+            <a href="siteplan.html" aria-label="Navigate to Site Plan">Site Plan</a>
+            <a href="contact.html" aria-label="Navigate to Contact">Contact</a>
+        </nav>  
+        
+     
+    <main>
+   <!-- Button to toggle sparkle effect (on/off) -->
         <div class="switch-container">
             <label for="sparkleToggle" id="toggle-label">✨ Enable Sparkles</label>
             <input type="checkbox" id="sparkleToggle" class="switch" checked>
             <span class="slider"></span>
         </div>
 
-     
-        <!-- This is where the sparkles will show up -->
-        <div id="sparkles-container"></div>
+        <h2>What I Do</h2>
+        <p>
+            I’m studying Software Engineering with a focus on web development. I’m especially curious about UI research—how
+            people use websites and how to make them better for everyone.
+        </p>
 
-        <!-- 'About' section -->
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Hello! My name is Cayleigh Marie, and I love creating web projects. This is a space to share my journey and ideas.</p>
-        </section>
+        <h2>Skills</h2>
+        <p>HTML, CSS, JavaScript, React, Git, Accessibility, UI/UX research</p>
 
-      <!-- 'Projects' section -->
-       <!-- to do: learn hwo nth works and create an alternate layout like you did with the 
-        graduation invite timeline  -->
-       <!-- 'Projects' section -->
-<!-- to do: learn hwo nth works and create an alternate layout like you did with the 
-graduation invite timeline  -->
-<section id="project">
-  <h2>My Projects</h2> 
+        <h2>Where I’m From</h2>
+        <p>
+            With roots in Idaho and Alberta, I now work remotely from the Mountain Time Zone—where the mountains are high and the Wi-Fi (usually) works.
+        </p>
 
- <section id="project">
-  <h2>My Projects</h2>
+      
+        <h2>Timeline</h2>
+   <section class="timeline">
 
-  <!-- 2022 -->
-  <h3>2022</h3>
-  <div class="project-grid">
+    <div class="timeline-item">
+  <div class="year">2020</div>
+  <div class="line"></div>
+  <div class="description">
+    Tutored American Sign Language (ASL), which strengthened my communication skills and ability to support different learning styles.
+  </div>
+</div>
+
+<div class="timeline-item">
+  <div class="year">2021</div>
+  <div class="line"></div>
+  <div class="description">
+    Learned cybersecurity best practices and taught myself new programming languages, demonstrating adaptability and a growth mindset.
+  </div>
+</div>
+
+<div class="timeline-item">
+  <div class="year">2022</div>
+  <div class="line"></div>
+  <div class="description">
+    Volunteered by organizing sports materials and planning community events for apartment residents. Also started web development classes to build foundational coding skills.
+  </div>
+</div>
+
+<div class="timeline-item">
+  <div class="year">2023</div>
+  <div class="line"></div>
+  <div class="description">
+    Dove deeper into web development and committed to serious study and skill building.
+  </div>
+
+    <div class="project-grid">
     <figure class="project-screenshot">
       <a href="https://cayleighleishman.github.io/CodeToCraft-/chamber/index.html" target="_blank" rel="noopener noreferrer" class="image-link">
         <img src="images/pocatello-Chamber.png" alt="Screenshot of home page of Pocatello Chamber website" class="project-image">
@@ -75,8 +108,6 @@ graduation invite timeline  -->
     </figure>
   </div>
 
-  <!-- 2023 -->
-  <h3>2023</h3>
   <div class="project-grid">
     <figure class="project-screenshot">
       <a href="https://cayleighleishman.github.io/CodeToCraft-/backpacks/index.html" target="_blank" rel="noopener noreferrer" class="image-link">
@@ -89,9 +120,15 @@ graduation invite timeline  -->
       </p>
     </figure>
   </div>
+</div>
 
-  <!-- 2024 -->
-  <h3>2024</h3>
+<div class="timeline-item">
+  <div class="year">2024</div>
+  <div class="line"></div>
+  <div class="description">
+    Expanded knowledge by learning new frameworks and contributed to a NASA-related class project at Arizona State University.
+  </div>
+
   <div class="project-grid">
     <figure class="project-screenshot">
       <a href="#" target="_blank" rel="noopener noreferrer" class="image-link">
@@ -106,21 +143,52 @@ graduation invite timeline  -->
     </figure>
   </div>
 
-  <!-- 2025 -->
-  <h3>2025</h3>
+</div>
 
-<figure class="project-screenshot">
+<div class="timeline-item">
+  <div class="year">2025</div>
+  <div class="line"></div>
+  <div class="description">
+    Gained confidence working on personal web development projects and improved interactive skills.
+  </div>
+
+  
+<!--<figure class="project-screenshot">
   <a href="#" class="image-link" target="_blank" rel="noopener noreferrer">
     <img src="images/checkThisOut.png" alt="Screenshot of the home page for my CheckThisOut Library Site" class="project-image">
   </a>
-  <figcaption>Check This Out Library</figcaption>
+   <figcaption>Check This Out Library</figcaption>
   <a href="#" target="_blank" rel="noopener noreferrer">Link Does Not Exist yet! Thank you for your patience</a>
   <p>
     Explored how APIs work and successfully connected one for the first time.
     I didn’t get the data showing yet, but it gave me a clearer understanding 
     of how APIs and MVC fit together.
   </p>
-</figure>
+</figure> -->
+  <div class="project-grid">
+    <figure class="project-screenshot">       
+    <img src="images/closetCouture.png" alt="Screenshot of home page of Closet Couture website" class="project-image"> 
+       <figcaption>Closet Couture</figcaption>
+      <p>
+        Building a closet site that mixes and matches outfits automatically.
+        For now I just have the wireframe and a few ideas, but I’m excited to see how it turns out!
+      </p>
+    </figure>
+  </div>
+</div>
+
+<!--<figure class="project-screenshot">
+  <a href="#" class="image-link" target="_blank" rel="noopener noreferrer">
+    <img src="images/checkThisOut.png" alt="Screenshot of the home page for my CheckThisOut Library Site" class="project-image">
+  </a>
+   <figcaption>Check This Out Library</figcaption>
+  <a href="#" target="_blank" rel="noopener noreferrer">Link Does Not Exist yet! Thank you for your patience</a>
+  <p>
+    Explored how APIs work and successfully connected one for the first time.
+    I didn’t get the data showing yet, but it gave me a clearer understanding 
+    of how APIs and MVC fit together.
+  </p>
+</figure> -->
 
 <figure class="project-screenshot">
   <a href="#" class="image-link" target="_blank" rel="noopener noreferrer">
@@ -155,15 +223,24 @@ graduation invite timeline  -->
   </p>
 </figure>
   </div>
+  </section>
+
 </section>
-
-
+        <h2>Just For Fun</h2>
+        <ul>
+            <li>Building a closet site that mixes and matches outfits automatically</li>
+            <li>Passionate about crafts, vibrant colors, and brain-teasing puzzles</li>
+        </ul>
     </main>
 
-    <!-- Footer section -->
     <footer>
-      <hr>
-        <p>&copy; 2025 CayleighMarie. All rights reserved.<a href="private-policy.html">Privacy Policy</a></p>
+        <p>&copy; 2025 Cayleigh Leishman. All rights reserved.</p>
+        <p>
+            Follow me on:
+            <a href="https://www.linkedin.com/in/cayleigh-leishman" target="_blank" rel="noopener noreferrer">LinkedIn</a> or
+            <a href="https://github.com/CayleighLeishman" target="_blank" rel="noopener noreferrer">GitHub</a>.
+            
+        </p>
     </footer>
 </body>
 </html>

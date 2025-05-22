@@ -1,3 +1,25 @@
+may 22nd
+
+okay i figired ut why i felt like i had nothing done.
+
+Basically i did two pages for "this is my project." I ha "about cayleigh" and the index (home) page. 
+
+So because of that I was stuck. I decided to move everyuthing onto the index page, and remove the about cayleigh page. I think it was a good idea, because now it's all on the same page. 
+
+but now im doubting the pink design. i love the color scheme, and I''m sticking to it, howver, i don't think that I wanat to keep it the way it is? 
+
+i looked at some other sites for some inspriation and to see if i can narrow down what is sticking out at me. First off, most navigation pages are at the top TOP of the paeg. So i think i might make the navigation bar at the top of the page. I also think I might make the header a little bit smaller, and have it so that the text is more centered.
+
+I still like the idea of having sparkles and ading annimation for the scavengerhunt page. so I'm going to add a frog animation once I can figure out how to do that. i found a site called "lottie" that has a lot of cute free animations. it looks like it should have the style I'm looking for, so I'm going to see if i can get that to work tomorrow. 
+
+I also am a little stuck on how to "display" my projects, especially because not all of them are done. and while I love the idea of displaying the website and I want to keep it. I dont like the idea of doing screenshots as that dosen't feel accessible. I like the idea of having it so that it can "show" you the next page,and it would be cool if you could hover over it and it dosent open it but it shows you a preview of the page, and allows you to interact with it. I think that would be a cool idea, but I don't know if thats possible for how heavy the websites are. plus, not all of my websites have screensots or are even done.
+
+I'm also goign to create a contact me page and have it set to send it to my work email. ("work" email is a little bit of a stretch, but it's the emial i use for anything where I might need to be proefssional.) I think it would be good to have a contact me page so that people can reach out to me. Plus its something I really want to add to my site for the "experience." 
+
+debuggin gthough, I worked a lot on the navigation bar and the header. I finally got the header to be smaller and slightly more centered. I also got the navigation bar to be at the top of the page, and I think I like it. I also fixed inconsistenties with the navigation bar. (one page had home, and contact but not about me, and the other page had about me and contact but not home. I think I like it better this way.)
+
+aaaand now i need to figure out why the sparkles are not showing up.
+
 
 
 May 20th
