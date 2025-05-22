@@ -1,13 +1,62 @@
 /* Media: when screen size is small (tiny phone or watch) */
 /* Ensures text stays within the box width */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   /* Reset base styles to rely on CSS variables for colors */
   body {
     font-size: 10px;
     padding: 5px;
     text-align: center;
   }
+ header {
+  flex-direction: column;
+  padding: 1em;
+  gap: 0.5em;
+}
+
+.header-left {
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+}
+
+nav {
+  flex-direction: column;
+  gap: 1em;
+  padding: 1em;
+}
+
+ .active{
+    background-color: var(--accessible-green);
+    font-weight: bold;
+    color:var(--white)
+  }
+
+  /*_____________________[Hamburger/Mobile Navigation button]__________________ */
+#hamburger-button{
+    background-color:var(--cinderella);
+    padding:.5rem;
+}
+#hamburger-button::before{ 
+    content: "☰";   
+}
+/*_____________________[nav when it's closed]____________________ */
+#hamburger-button.open::before{
+    content: 'x';
+}
+
+/* ____________________[nav when its opens]_______________________*/
+nav ul.open{
+    display:flex;
+    flex-direction:column;
+    justify-content: space-around;
+
+}
+nav ul.open li{
+    /* border-style:double; */
+    border: double .1rem var(--mulan);
+}
+
 
   div {
     display: flex;

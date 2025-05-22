@@ -20,7 +20,11 @@ debuggin gthough, I worked a lot on the navigation bar and the header. I finally
 
 aaaand now i need to figure out why the sparkles are not showing up.
 
+1 hour later (in monotone voice)
 
+I figured out why i dont like the website. its because when yu first see the page, yes its bright and colorful, but to see anything meanignful you have to scroll down. I think I need to make the header smaller, and have it so that the text is more centered. I also think I need to make the navigation bar at the top of the page with the headerto the right. I think that would be a good idea.
+
+im putting the nav into the header, and then having the header be smaller. I think that would ehlp make the site flow smoother.
 
 May 20th
 

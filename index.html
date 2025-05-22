@@ -17,6 +17,7 @@
 
     <!-- JavaScript -->
     <script src="scripts/sparkleCursor.js" defer></script>
+    <script src="scripts/darkMode.js" defer></script>
 
     <!-- Favicon -->
     <link rel="icon" href="images/favicon.ico" />
@@ -26,16 +27,25 @@
 <body>
     <header>
       
+      
         <img src="images/profile.svg" alt="Cayleigh Leishman Profile Picture" />
         <h1>Hi, I'm Cayleigh Leishman</h1>
-    </header>
+
         
           <nav>
-            <a href="index.html" aria-label="About Navigation">About Me</a>
+            <a class="active" href="index.html" aria-label="Home">Home</a>
             <a href="fun/scavengerhunt.html"aria-label="Navigate to Scavenger Hunt">Scavenger Hunt</a>
             <a href="siteplan.html" aria-label="Navigate to Site Plan">Site Plan</a>
             <a href="contact.html" aria-label="Navigate to Contact">Contact</a>
         </nav>  
+        <button title="navigation" id="hamburger-button"></button>
+
+        <div class="dark-mode-toggle">
+  <label for="darkModeSwitch">🌙 Dark Mode</label>
+  <input type="checkbox" id="darkModeSwitch" />
+</div>
+    </header>
+        
         
      
     <main>
