@@ -8,9 +8,12 @@
     <!-- Link to the CSS stylesheets -->
     <link rel="stylesheet" href="/styles/base.css"> 
     <link rel="stylesheet" href="/styles/small.css">
+    <link rel="stylesheet" href="/styles/bubble-effect.css">
+    <link rel="stylesheet" href="/styles/frog.css">
 
     <!-- Link to the JavaScript file that makes the sparkle effect work -->
     <script src="/scripts/sparkleCursor.js" defer></script>
+    <script src="/scripts/frog.js" defer></script>
 
     <!-- Favicon (the little icon you see in tabs) -->
     <link rel="icon" href="/images/favicon.ico">
@@ -28,7 +31,20 @@
             <a href="/contact.html" aria-label="Navigate to Contact">Contact</a>
         </nav>  
     </header>
-         
+    <div id="background-wrap">
+    <div class="bubble x1"></div>
+    <div class="bubble x2"></div>
+    <div class="bubble x3"></div>
+    <div class="bubble x4"></div>
+    <div class="bubble x5"></div>
+    <div class="bubble x6"></div>
+    <div class="bubble x7"></div>
+    <div class="bubble x8"></div>
+    <div class="bubble x9"></div>
+    <div class="bubble x10"></div>
+</div>
+
+
     <!-- notes this page is for accessibility reasosm,uif you spook easily or hlike t be aware of all the hover effects here are all the hover efefcts! I challege you to find a ll ## of them! -->
 <main>
     
@@ -43,8 +59,10 @@
     
     a secret button where if they click on it a curtain appears ? wiorkshop it out. Maybe do confetti effect instead 
     
+    add hints page and a pop up per hint 
 
-    
+    add pops of color and animation of some sort
+    have suprise confetti efefct when they hover or click over that one spot
     -->
 
     <p> Find all the special efefcts that I have on my pages</p>
@@ -55,9 +73,12 @@
     <!-- index.page -->
      <h2>Home</h2>
      <p>sparkles on the index paeg</p>
+
+     <p>Two Hover Effects that flip </p>
     
-     <h2>About Cayleigh</h2>
-     <p>there's spinning effet under "current projects"</p>
+     <p>spinning effet under "current projects"</p>
+
+        <!-- <p>hover over the colors, it will pop up</p>   -->
 
      <h2>siteplan</h2>
 
@@ -65,10 +86,55 @@
     <p>all pages </p>
      <p>hover effect</p>
 
+     <h2>Credits to:</h2>
+
+     <a href="https://codepen.io/Mark_Bowley/pen/PozwyP">Bubble Effects</a>
     </main>
 
     <!-- Footer section -->
     <footer>
+                 <div class="container">
+  <div class="frog">
+    <div class="body"></div>
+    <div class="arm left">
+      <div class="hand">
+        <div class="finger"></div>
+        <div class="finger"></div>
+        <div class="finger"></div>
+      </div>
+    </div>
+    <div class="arm right">
+      <div class="hand">
+        <div class="finger"></div>
+        <div class="finger"></div>
+        <div class="finger"></div>
+      </div>
+    </div>    
+    <div class="leg left">
+      <div class="foot"></div>
+    </div>
+    <div class="leg right">
+      <div class="foot"></div>
+    </div>
+    <div class="head">
+      <div class="eyes">
+        <div class="eye left">
+          <div class="eyeball">
+            <div class="pupil"></div>            
+          </div>
+          <div class="eyelid"></div>
+        </div>   
+        <div class="eye right">
+          <div class="eyeball">
+            <div class="pupil"></div>            
+          </div>
+          <div class="eyelid"></div>
+        </div>           
+      </div>
+    </div>    
+  </div>
+</div>
+
         <p>&copy; 2025 CayleighMarie. All rights reserved.<a href="private-policy.html">Privacy Policy</a></p>
     </footer>
 </body>

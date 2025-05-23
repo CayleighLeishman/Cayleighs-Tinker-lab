@@ -1,12 +1,13 @@
 /* Media: when screen size is small (tiny phone or watch) */
 /* Ensures text stays within the box width */
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 700px) {
   /* Reset base styles to rely on CSS variables for colors */
   body {
     font-size: 10px;
     padding: 5px;
     text-align: center;
+    background-color: var(--backgrond-color);
   }
  header {
   flex-direction: column;
@@ -26,11 +27,7 @@ nav {
   padding: 1em;
 }
 
- .active{
-    background-color: var(--accessible-green);
-    font-weight: bold;
-    color:var(--white)
-  }
+
 
   /*_____________________[Hamburger/Mobile Navigation button]__________________ */
 #hamburger-button{
@@ -71,9 +68,30 @@ nav ul.open li{
     display: none;
   }
 
+  img{
+    width: fit-content;
+  }
+
   /* ==================== */
   /* About-cayleigh-html  */
   /* ==================== */
   
   /* To do: On click, generate sparkles if sparkles are set "on" (JS handles this) */
+}
+@media screen and (max-width: 600px) {
+   body {
+   
+    background: var(--backgrond-color);
+  }
+  
+  .image-text-pair,
+  .image-text-pair.reverse {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .image-text-pair img {
+    width: 100%;
+    max-width: 300px;
+  }
 }

@@ -8,6 +8,12 @@ I kept getting disstracted, I would be like "I need to update the images" then I
 
 I'm going to keep trrack of what I've found that I need to work on so I can worry about one at a time, and work on prioritiing. I'm great at priroritizing, but I'm not good at keeping focus if i see new things that need to be done. So that will be a work in progress for me.
 
+Things i did as i did:
+
+<li> copied header from index page to contacts page and changed the "active
+ class to the contacts page. </li>
+
+
 may 21st
 
 okay i figired ut why i felt like i had nothing done.
