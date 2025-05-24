@@ -1,4 +1,21 @@
 
+May 24
+
+I didnt sleep so well so this is my plan for today:
+
+work on this page 3 hours today (not straight just throuhut because i do like working on this)
+Figure out a plan with the blog (Debate how to implement)
+FIX THE DANG LAYOUT CAYLEIGH STOP PUTTING IT OFF! YOU NEED TO KNOW THIS.
+
+study for exam next week 
+work labs X3
+complete Advanced CSS project. 
+
+For this project:
+Get the journal page up and running 
+descide if we should do journal enteries or not. i might just uplad youtube journals and have the videos unlisted so anyone with link can see but only if they go through my site. Yeah I think i'll do that so I dont have to type all the time. 
+
+
 May 22nd
 
 I'm exasted and though i should do thislater at night and do my homework now I was mor emotivated to do this, and I'm strugling to focus on my homework.
