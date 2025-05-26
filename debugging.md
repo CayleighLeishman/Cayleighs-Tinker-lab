@@ -1,4 +1,15 @@
 
+May 26
+
+I wanted to organize the files better, so I created a folder called "business" and moved files like "contact" "private-policy" "siteplan" and timeline into that folder. 
+
+I should create a projects folder for projects but I think its okay to connect it to github for now. I'll see how people feel when i actually have more projects to share withpeople. 
+
+I also have fun folder for journal entreeires, frog and scavenger hunt page. 
+AFteri moved things I tried to fix all the link issues I had, I think i gotmost of it, but I'm sure I missed a few so I'll keep my eyes open. 
+
+I could name these folders better, but I wanted it to be more simple and easy to understand for people who were not familiar with coding. I think it would be better to have the folders this way to showcase that I 'm aware these pages are more "fun" and others more "legal" (beter for businesses) so I think I want to keep it this way. But I'll ask olivia another time. 
+
 May 24
 
 I didnt sleep so well so this is my plan for today:
