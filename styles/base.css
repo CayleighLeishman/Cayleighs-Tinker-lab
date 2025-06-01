@@ -60,6 +60,12 @@
 
 }
 
+.skills img{
+  align-items: end;
+  justify-content: center;
+
+}
+
 header{
   position: fixed;
   top: 0;
@@ -172,20 +178,6 @@ ul li{
 ul li:hover{
   transform: scale(1.02); 
   box-shadow: hsla(var(--box-shadow-green), 0.3);/* Add a shadow effect */
-  animation-name: vertical-spin;
-    animation-duration: 1s; /* lightning fast */;
-    animation-iteration-count: 3;
-    animation-timing-function: linear;
-    transform-style: preserve-3d;
-}
-
-@keyframes vertical-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
 
   /* Navigation */

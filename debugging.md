@@ -1,3 +1,9 @@
+May 31
+
+got rid of the spinning vertical on hover removed the animation from ul li a{} and just removed the animation: blah blah; I kept the other hover effects.
+
+I also finally added the images of the pictures I said I would. 
+
 
 May 26
 
