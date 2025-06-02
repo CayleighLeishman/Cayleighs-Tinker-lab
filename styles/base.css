@@ -47,7 +47,7 @@
   }
 
   main { 
-
+    
     background-color: var(--background-color);
     border-radius: .7em; 
     border-color: var(--border-blue);
@@ -60,10 +60,15 @@
 
 }
 
-.skills img{
-  align-items: end;
-  justify-content: center;
+.skills{
+  display:flex;
 
+}
+.skillset img{
+  width: 80px;
+  padding: 5px;
+  justify-content: center;
+  background-color: var(--white);
 }
 
 header{
@@ -181,7 +186,7 @@ ul li:hover{
 }
 
   /* Navigation */
-  nav {
+nav {
  border-radius: .5em;
 
   z-index: 1000;
@@ -207,6 +212,11 @@ ul li:hover{
     transition: color 0.3s ease-in-out; /* Smooth text color transition */
     
     z-index: 1;
+  }
+  
+  nav ul li{
+    width:auto;
+
   }
 
   nav a::after {
@@ -664,22 +674,7 @@ table.colors td:hover {
 
 /* Responsive for small screens */
 @media (max-width: 768px) {
-  .zigzag-row,
-  .zigzag-row.reverse {
-    flex-direction: column;
-    text-align: center;
-  }
 
-  .zigzag-image {
-    max-width: 100%;
-    margin: 0 auto;
-  }
-
-  .image-flip {
-    width: 80vw;
-    height: auto;
-    aspect-ratio: 1 / 1;
-  }
 }
 
 

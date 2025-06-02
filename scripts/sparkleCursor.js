@@ -1,4 +1,4 @@
-let sparkleEnabled = true; // Default: sparkles are on
+let sparkleEnabled = false; // Default: sparkles are off
 
 const sparkleToggle = document.getElementById('sparkleToggle');
 sparkleToggle.addEventListener('change', (e) => {

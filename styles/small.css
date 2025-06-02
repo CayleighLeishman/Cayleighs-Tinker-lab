@@ -78,12 +78,23 @@ nav ul.open li{
   
   /* To do: On click, generate sparkles if sparkles are set "on" (JS handles this) */
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
    body {
    
     background: var(--backgrond-color);
   }
   
+  
+  .image-flip {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+  }
+
+  .skills{
+    width:auto;
+  }
+
   .image-text-pair,
   .image-text-pair.reverse {
     flex-direction: column;
