@@ -1,5 +1,7 @@
-# 🛠🧚‍♀✨ Cayleigh's Tinker Lab 🛠 🧚‍♀️✨ 
+# [🛠🧚‍♀✨ Cayleigh's Tinker Lab 🛠 🧚‍♀️✨](https://cayleighleishman.github.io/Cayleighs-Tinker-lab/cayleighl.html)
 ✨ *Where creativity meets code!* ✨  
+
+
 
 Welcome to **Cayleigh's Tinker Lab**, a space dedicated to exploring Cayleigh's ideas, crafting innovative solutions, and showcasing personal projects, especially programming projects. Here, you'll find a collection of experiments, tools, and applications that reflect my journey as a developer.  
 
