@@ -4,6 +4,7 @@
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
     <meta name="description" content="Personal project showcasing ideas and creations" />
     <meta name="author" content="Cayleigh Marie" />
     <meta name="keywords" content="Cayleigh Marie, personal projects, web development, coding, tutorials" />
@@ -17,7 +18,8 @@
 
     <!-- JavaScript -->
     <script src="scripts/sparkleCursor.js" defer></script>
-    <script src="scripts/darkMode.js" defer></script>
+    <script src="scripts/hamburger.js" defer></script>
+    <!-- <script src="scripts/darkMode.js" defer></script> -->
 
     <!-- Favicon -->
     <link rel="icon" href="images/favicon/favicon.ico" />
@@ -31,14 +33,18 @@
         <img src="images/profile.svg" alt="Cayleigh Leishman Profile Picture" />
         <h1>Cayleigh Leishman</h1>
 
-        
-          <nav>
-            <a class="active" href="index.html" aria-label="Home">Home</a>
-            <a href="fun/scavengerhunt.html" aria-label="Navigate to Scavenger Hunt">Scavenger Hunt</a>
-            <a href="fun/journalentries/intro.html" aria-label="navigate to Blog psts">Blog entries</href>
-            <a href="business/siteplan.html" aria-label="Navigate to Site Plan">Site Plan</a>
-            <a href="business/contact.html" aria-label="Navigate to Contact">Contact</a>
-        </nav>  
+        <!-- navigation here: -->       
+         <nav>
+              
+                <li><a class="active" href="cayleighl.html" aria-label="Home">Home</a></li>
+                <li><a href="fun/scavengerhunt.html" aria-label="Navigate to Scavenger Hunt">Scavenger Hunt</a></li>
+                <!-- <li><a href="fun/journalentries/intro.html" aria-label="Navigate to Blog posts">Blog entries</a></li> -->
+                <li><a href="business/siteplan.html" aria-label="Navigate to Site Plan">Site Plan</a></li>
+                <li><a href="business/contact.html" aria-label="Navigate to Contact">Contact</a></li>
+            
+            </nav>
+      
+
         <button title="navigation" id="hamburger-button"></button>
 
         <div class="dark-mode-toggle">
@@ -70,17 +76,44 @@
         <h2>Skills</h2>
         <!--  -->
         <section class="skills">
-            <p><img src="images/icons8-html-100.png" alt="pink logo for HTML">HTML</p>
-            <p><img src="images/icons8-css-96.png" alt="pink logo for CSS"> CSS</p>
+            <section class="skillset">
+                <img src="images/icons8-html-100.png" alt="pink logo for HTML">
+                <p>HTML</p>
+            </section>
+
+     <section class="skillset">
+        <p><img src="images/icons8-css-96.png" alt="pink logo for CSS"> CSS</p>
+     </section>   
+        <section class="skillset">
             <p><img src="images/icons8-javascript-128.png" alt="pink logo for Javascript">Javascript</p>
+        </section>   
+        <section class="skillset">
             <p><img src="images/icons8-json-80.png" alt="Pink Logo for Json">JSON</p>
+
+        </section>   
+
+        <section class="skillset">
             <p><img src="images/icons8-react-96.png" alt="pink logo for React">REACT</p>
-            <p><img src="images/icons8-svelte-128.png" alt="pink logo for Svelte">Svelte</p>
+        </section> 
+
+        <section class="skillset">
+                        <p><img src="images/icons8-svelte-128.png" alt="pink logo for Svelte">Svelte</p>
+
+        </section>
+        <section class="skillset">
             <p><img src="images/icons8-c-sharp-logo-100.png" alt="pink logo for CSharp.">C#</p>
 
-            <p><img src="images/icons8-accessibility-100.png" alt="pink button for accessibility"> Accessibility driven</p>
-            <p><img src="images/icons8-mysql-80.png" alt="{Pink button for MySQL}">MySQL</p>
         </section>
+
+        <section class="skillset">
+            <p><img src="images/icons8-accessibility-100.png" alt="pink button for accessibility"> Accessibility driven</p>
+
+        </section>
+        <section class="skillset">
+            <p><img src="images/icons8-mysql-80.png" alt="{Pink button for MySQL}">MySQL</p>
+
+        </section> 
+        </section>  <!-- class= skills -->
  
 
         <h2>Where I’m From:</h2>
